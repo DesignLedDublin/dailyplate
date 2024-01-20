@@ -328,14 +328,8 @@ I used Boostrap code for some parts of my website, this is noted in the code.
 
 ## Code 
 
-* [Dropdown menu in navbar](https://www.w3schools.com/bootstrap4/bootstrap_dropdowns.asp#:~:text=Basic%20Dropdown&text=To%20open%20the%20dropdown%20menu,actually%20build%20the%20dropdown%20menu.)
-    * I used code from this page to help me create the dropdown menu without a button where the dropdown is, which is what I was getting from the Navbar Bootstrap code. 
-* [Contact Form base code](https://mdbootstrap.com/docs/b4/jquery/forms/contact/#html)
-    * This is where I got the base code for my contact form.  I then adapted it to my needs. 
-* The base code for the 404 page came from this site:
-https://frontendshape.com/post/bootstrap-5-404-page-examples
-* [Sticky Footer](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers)
-  * I implemented this code to make my footer sticky.
+* [Background Image](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_full_page)
+    * I used this code for my background image. I then adapted it using media queries for different size screens. 
 &nbsp;  
 
 ## Images
