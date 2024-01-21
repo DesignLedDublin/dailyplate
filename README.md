@@ -40,10 +40,7 @@ Colour Theory is an interactive quiz designed to teach people about calories.  I
 
 * [Issues Found During Site Development](#issues-found-during-site-development)
   * [Creating the dropdown menu in navbar menu](#creating-the-dropdown-menu-in-navbar-menu)
-  * [Adding required action to the form inputs on the Contact page](#adding-required-action-to-the-form-inputs-on-the-contact-page)
-  * [Endless horizontal scroll in How To section on Palettes page](#endless-horizontal-scroll-in-how-to-section-on-palettes-page)
-  * [Spacing for large screens on What is Colour Theory Page](#spacing-for-large-screens-on-what-is-colour-theory-page)
-  * [Issues with Footer on Different Screen Sizes](#issues-with-footer-on-different-screen-sizes)
+  
 
 * [Deployment](#deployment)
 
@@ -122,7 +119,6 @@ ___
 
 # Features Left to Implement
 
-* A quiz page will be added to enable people to find their colour style for their home.
 * As a future enhancement, the contact form will be updated with javascript to send an email to DesignLed when submit is clicked. 
 
 &nbsp;  

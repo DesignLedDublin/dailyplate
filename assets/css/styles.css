@@ -8,6 +8,15 @@ body, html {
       font-weight: 400;
       font-style: normal;
   }
+
+  h2 {
+    padding-right: 6em;
+    padding-left: 6em;
+  }
+
+  button {
+    font-size: large;
+  }
   
   .bg {
     /* The image used */
@@ -25,9 +34,10 @@ body, html {
   .central-header {
     text-align: center;
     background-color: #FA5F22;
-    padding: 2em;
-    margin-left: 20%;
-    margin-right: 20%;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 20%;
   }
 
