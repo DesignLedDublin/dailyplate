@@ -8,6 +8,7 @@ body, html {
       font-style: normal;
   }
 
+
   button {
     font-size: large;
   }
@@ -69,8 +70,6 @@ body, html {
     background-size: cover; */
    }
   
-  
-
   /* ipad */
   @media (min-width: 768px) and (max-width: 1024px) {
    .bg {
