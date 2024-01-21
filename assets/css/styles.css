@@ -9,10 +9,6 @@ body, html {
       font-style: normal;
   }
 
-  h2 {
-    padding-right: 6em;
-    padding-left: 6em;
-  }
 
   button {
     font-size: large;
@@ -38,11 +34,13 @@ body, html {
   .central-header {
     text-align: center;
     background-color: #FA5F22;
+    background-position: center;
+    width: auto;
     padding-bottom: 5em;
     padding-top: 5em;
     margin-left: 25%;
     margin-right: 25% !important;
-    margin-top: 20%;
+    margin-top: 10%;
   }
 
 
@@ -63,3 +61,10 @@ body, html {
    }
     }
   
+    @media (min-width: 1200px) {
+      h2 {
+        padding-right: 6em;
+        padding-left: 6em;
+        margin: 1em;
+      }
+    }
