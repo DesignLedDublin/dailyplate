@@ -44,7 +44,6 @@ body, html {
     margin-left: 25%;
     margin-right: 25% !important;
     margin-top: 10%;
-    opacity: 0.5;
   }
 
   .central-header-quiz-page {
@@ -53,7 +52,7 @@ body, html {
     border-color: #FA5F22;
     border-style: solid;
     border-radius: 20%;
-    border-width: 0.5em;
+    border-width: 0.2em;
     background-position: center;
     width: auto;
     padding-bottom: 5em;
