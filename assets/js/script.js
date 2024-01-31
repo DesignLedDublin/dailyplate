@@ -1,15 +1,23 @@
-function chooseAnAnswer() {
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("DOM fully loaded and parsed");
+    });
 
-}
 
-function decideIfCorrect() {
+// var correctAnswer = 
 
-}
+// function chooseAnAnswer() {
 
-function addToScore() {
+// };
 
-}
+// function decideIfCorrect() {
 
-function moveToNextPage() {
-    
-}
+
+// };
+
+// function addToScore() {
+
+// };
+
+// function moveToNextPage() {
+
+// };
