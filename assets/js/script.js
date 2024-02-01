@@ -3,11 +3,27 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
-// var correctAnswer = 
+ 
+/** Function that reacts when the user chooses an answer */
+function chooseAnAnswer() {
+    let choices = document.querySelectorAll(".choices");
 
-// function chooseAnAnswer() {
+    choices.forEach(choice => {
+      choice.addEventListener("click", function() {
+        // Remove the 'chosen' class from all choices
+        choices.forEach(otherChoice => {
+          otherChoice.classList.remove("chosen");
+        });
+    
+        // Add the 'chosen' class to the clicked choice
+        choice.classList.add("chosen");
+      });
+    });
+};
 
-// };
+chooseAnAnswer();
+
+
 
 // function decideIfCorrect() {
 

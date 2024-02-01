@@ -62,15 +62,15 @@ body, html {
     margin-top: 10%;
   }
 
-  .icon-background2 {
-    background-color:#6fa428;
-    border-radius: 50%;
-  }
 
   .choices {
     color: #FA5F22;
   }
 
+  .choices.chosen {
+    background-color: green;
+    border-radius: 50%;
+  }
 
   /* mobile */
   @media (min-width: 320px) and (max-width: 480px) {
