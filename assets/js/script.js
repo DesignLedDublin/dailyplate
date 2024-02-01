@@ -10,12 +10,9 @@ function chooseAnAnswer() {
 
     choices.forEach(choice => {
       choice.addEventListener("click", function() {
-        // Remove the 'chosen' class from all choices
         choices.forEach(otherChoice => {
           otherChoice.classList.remove("chosen");
         });
-    
-        // Add the 'chosen' class to the clicked choice
         choice.classList.add("chosen");
       });
     });
