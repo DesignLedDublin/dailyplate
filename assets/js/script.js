@@ -45,12 +45,17 @@ function goToNextPage() {
 
 /** Function that shows the user their score */
 function showScore() {
-
   // finalScores.forEach(finalScore) => {
-
   //  document.write("/assets/images/broccoli_happy");
   // };
   
-  // if finalScore <= 5
+  if (finalScore <= 6) {
+    document.write("Oh dear you only scored " + finalScore);
+  } else if (finalScore >= 7){
+    document.write ("Yay! You scored " + finalScore);
+  } else {
+    document.write("Oh dear, there has been an error.")
+  };
 
 };
+
