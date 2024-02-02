@@ -257,33 +257,9 @@ Once I removed these CSS elements, no errors were found:
 
 # Issues found during site development 
 
-### Creating the dropdown menu in navbar menu 
-  * When I used code from Boostrap, it gave me a button instead of a dropdown menu item that looked the same as the rest of the menu.  [This article](https://www.w3schools.com/bootstrap4/bootstrap_dropdowns.asp#:~:text=Basic%20Dropdown&text=To%20open%20the%20dropdown%20menu,actually%20build%20the%20dropdown%20menu.) enabled me to get this element to look right, but the menu wouldn't drop down.
-  * I tried changing to v5 of Bootstrap as I read that you need this to make the dropdown toggle but this made everything go out of aligment.  I eventually found [this article](https://stackoverflow.com/questions/22955916/bootstrap-collapse-not-collapsin) which made me realise that if I took the -bs- out of the data-bs-toggle and went back to v4 of Bootstrap the drop down menu works and the alignment works. 
-
-### Adding required action to the form inputs on the Contact page
-  * The form template I was using did not have this function.  When I added the required instruction, it did not work.  
-  * [This page](https://stackoverflow.com/questions/60058280/required-attribute-not-working-with-form-tag) made me realise the form was missing the submit specification.
-  * This still didn't work and I realise looking at the code that the <form></form> section was closed before the submit section.  I moved this underneath the submit section and added 'formaction' instead of 'href' after reading [this article](https://www.w3schools.com/tags/att_button_formaction.asp) and it worked. 
-
-### Endless horizontal scroll in How To section on Palettes page
-  * [This article](https://medium.com/afosto/bootstrap-v4-explained-the-grid-and-how-to-use-it-82a4de58604e) told me the container fluid class doesn’t have a max width.
-  * So I used advice from [this article](https://mdbootstrap.com/docs/standard/extended/max-width/#:~:text=In%20order%20to%20make%20an,w%2D100%20class%20to%20it.&text=You%20can%20also%20use%20max,100%25%3B%20utilities%20as%20needed) to set a max width and the problem was solved. 
-
-### Spacing for large screens on What is Colour Theory Page
-  * When this page was viewing on a very large page (over 2800px wide) the content in the section below the title that gives information about different colours would spread out to either side and leave a big gap in the middle.  The bigger the screen, the bigger the gap would get. 
-  ![Issue image](/assets/Readme%20Images/Spacing%20issue%20-%20large%20screen%20-%20colour%20theory%20page.webp)
-  * I tried adding col-xl-4 into the class which removed the gap and put the two sections together but the issue was that they were all bunched to the left. 
-  ![Initial Solution](/assets/Readme%20Images/Spacing%20issue%20-%20large%20screen%20-%20colour%20theory%20page%20-%20initial%20solution.webp)
-  * I found information about offsetting columns on [this page](https://getbootstrap.com/docs/4.0/layout/grid/) in Bootstrap and so played around with this.  Adding in offset-xl-2 to code meant the content stayed together in the centre of the page on larger screens. 
-
-### Issues with footer on different screen sizes. 
-  * I had two issues with the footer that I had to fix.  The first was that on ipad screens, the 4 social icons wouldn't sit in a line.
-  ![Ipad issue](/assets/Readme%20Images/Footer%20spacing%20-%20ipad.webp)
-  * I fixed this by simply giving this section a little more space on the page.  The div for these icons initially had col-md-2, by changing it to col-md-3, the icons stayed in the same line on all screens. 
-  * The second issue I had with the footer was that on mobile devices, the DesignLed copyright element sat to the left and there was not enough spacing between the elements. 
-  ![Mobile issue](/assets/Readme%20Images/Footer%20spacing%20-%20mobile.webp)
-  * By looking at the code using Inspect, I was able to identify svg section of this code that was determining the spacing.  I used media query to increase the width and height of this on mobile view which resolved the issue.
+### Getting the showScore function to work automatically when the score-page function was opened 
+  * I was using the onload = "function" syntax in the body but it wasn't loading.  After spending a long time trying to find a solution and trying out window.onload after readign several articles on Stack Overflow, I found [this article](https://sebhastian.com/function-not-defined-javascript/?utm_content=cmp-true).
+  * This made me realise that I was calling the function above where I had placed the script for my JS file.  It suggested I put onload function underneath that at the bottom of the body but instead I decided to move the script for the JS file up to the head and include a defer command.  Once I did this, it sorted out the issue. 
 
 &nbsp;  
 [Back to Table of Contents](#table-of-contents)
