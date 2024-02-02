@@ -16,7 +16,7 @@ function chooseAnAnswer() {
       choice.classList.add("chosen");
     });
   });
-  return;
+
 }
 
 chooseAnAnswer();
@@ -43,6 +43,14 @@ function goToNextPage() {
   });
 }
 
+/** Function that shows the user their score */
 function showScore() {
+
+  // finalScores.forEach(finalScore) => {
+
+  //  document.write("/assets/images/broccoli_happy");
+  // };
+  
+  // if finalScore <= 5
 
 };
