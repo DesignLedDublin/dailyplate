@@ -21,7 +21,7 @@ function chooseAnAnswer() {
 
 chooseAnAnswer();
 
-/** Function that decides which is the correct answe and increments the final score */
+/** Function that decides which is the correct answer and increments the final score */
 function decideIfCorrectIncrementScore() {
   let chosenAnswer = chooseAnAnswer();
   let correctAnswer = document.querySelector(".correct-answer");
@@ -33,7 +33,7 @@ function decideIfCorrectIncrementScore() {
     console.log("Incorrect!");
   }
 }
-decideIfCorrect();
+decideIfCorrectIncrementScore();
 
 /** Function that takes use to next page and calls decideIfCorrect function */
 function goToNextPage() {
@@ -45,17 +45,17 @@ function goToNextPage() {
 
 /** Function that shows the user their score */
 function showScore() {
+  
+  if (finalScore <= 6) {
+    document.getElementById("score-text").innerHTML = "Oh dear you only scored " + finalScore
+  } else if (finalScore >= 7){
+    document.getElementById("score-text").innerHTML = "Yay! You scored " + finalScore;
+  } else {
+    document.getElementById("score-text").innerHTML = "Oh dear, there has been an error."
+  };
+};
+
+
   // finalScores.forEach(finalScore) => {
   //  document.write("/assets/images/broccoli_happy");
   // };
-  
-  if (finalScore <= 6) {
-    document.write("Oh dear you only scored " + finalScore);
-  } else if (finalScore >= 7){
-    document.write ("Yay! You scored " + finalScore);
-  } else {
-    document.write("Oh dear, there has been an error.")
-  };
-
-};
-
