@@ -43,6 +43,6 @@ function goToNextPage() {
   });
 }
 
-// function moveToNextPage() {
+function showScore() {
 
-// };
+};
