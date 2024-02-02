@@ -16,29 +16,32 @@ function chooseAnAnswer() {
       choice.classList.add("chosen");
     });
   });
-return
-};
+  return;
+}
 
 chooseAnAnswer();
 
 /** Function that decides which is the correct answe and increments the final score */
 function decideIfCorrectIncrementScore() {
+  let chosenAnswer = chooseAnAnswer();
+  let correctAnswer = document.querySelector(".correct-answer");
 
-    let chosenAnswer = chooseAnAnswer();
-    let correctAnswer = document.querySelector(".correct-answer");
+  if (chosenAnswer == correctAnswer) {
+    finalScore++;
+    console.log("Correct!");
+  } else {
+    console.log("Incorrect!");
+  }
+}
+decideIfCorrect();
 
-    if (chosenAnswer == correctAnswer) {
-        finalScore++;
-        console.log("Correct!");
-    } else {
-console.log("Incorrect!");
-    }
-};
-
-// decideIfCorrect();
-
-
-
+/** Function that takes use to next page and calls decideIfCorrect function */
+function goToNextPage() {
+  document.addEventListener("click", function () {
+    decideIfCorrect();
+    document.getElementById("quiz-next-page").style.backgroundColor = "#FA5F22";
+  });
+}
 
 // function moveToNextPage() {
 
