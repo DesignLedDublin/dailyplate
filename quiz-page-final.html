@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e9ea849082.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Daily Plate</title>
+  </head>
+
+  <body class="bg-quiz-page">
+    <div class="container-fluid central-header-quiz-page">
+      <p>What has more calories?</p>
+
+      <div class="row row-no-margin">
+        <div class="col-xs-12 col-sm-6 col-xl-4">
+          <i class="fa-regular fa-circle choices icon-background2"></i>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-xl-3 quiz-text">
+          <p class="quiz-text">Hamburger</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-xl-4">
+          <i class="fa-regular fa-circle choices correct-answer"></i>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-xl-3">
+          <p>Broccoli</p>
+        </div>
+      </div>
+
+      <div class="row row-no-margin">
+        <div class="col-xs-12 col-sm-6 col-xl-4">
+          <i class="fa-regular fa-circle choices"></i>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-xl-3">
+          <p>A Mars Bar</p>
+        </div>
+      </div>
+
+      <!-- Button code from Bootstrap - DO I NEED TO ADD - onlick = "goToNextPage()" - to make the js code functional here? See https://www.geeksforgeeks.org/how-to-create-a-link-in-javascript/ -->
+      <a href="score-page.html">
+      <button type="button" class="btn btn-dark btn-md" id="quiz-next-page">
+        Go to next page
+      </button>
+    </a>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
