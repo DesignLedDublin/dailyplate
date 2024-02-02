@@ -16,28 +16,29 @@ function chooseAnAnswer() {
       choice.classList.add("chosen");
     });
   });
-
+return
 };
 
 chooseAnAnswer();
 
-/** Function that decides which is the correct answer */
-function decideIfCorrect() {
+/** Function that decides which is the correct answe and increments the final score */
+function decideIfCorrectIncrementScore() {
 
-    let correctAnswer = document.querySelectorAll(".correct-answer");
-    
-    if (chooseAnAnswer == correctAnswer) {
+    let chosenAnswer = chooseAnAnswer();
+    let correctAnswer = document.querySelector(".correct-answer");
+
+    if (chosenAnswer == correctAnswer) {
         finalScore++;
+        console.log("Correct!");
     } else {
-        finalScore;
-    };
+console.log("Incorrect!");
+    }
 };
 
-decideIfCorrect();
+// decideIfCorrect();
 
-// function addToScore() {
 
-// };
+
 
 // function moveToNextPage() {
 
