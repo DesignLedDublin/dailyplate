@@ -14,20 +14,11 @@ Colour Theory is an interactive quiz designed to teach people about calories.  I
 
 * [Features](#features)
   * [Navigation Menu](#navigation-menu)
-  * [Footer](#footer)
-  * [Favicon](#favicon)
-  * [404](#404)
-  * [Responsive Design](#responsive-design)
-  * [Contact Form and Success Page](#contact-form-and-success-page)
-  * [Link Hover Colour Change](#link-hover-colour-change)
 
 * [Features Left to Implement](#features-left-to-implement)
 
 * [Screenshots](#screenshots)
   * [Home Page](#home-page)
-  * [What is Colour Theory Page](#what-is-colour-theory-page)
-  * [Palettes Drop Down Menu](#palettes-drop-down-menu)
-  * [Contact page](#contact-page)
 
 * [Technologies](#technologies)
 
@@ -89,33 +80,10 @@ This website consists of 8 pages.  Six are accessible from the navigation menu. 
    ![Dropdown](/assets/Readme%20Images/Header-dropdown-menu.webp)
 ___
 
-### Footer
-  * To the right are social media icons.  The social links go to DesignLed's social media pages.  Icons are accessible to the visually impaired who may be using a screen reader with the use of aria labels.  
-  * To the left is the copyright to DesignLed for the website, this also links to the DesignLed website in case users would like to see the studio's website.
-  * This will allow the user to follow DesignLed if they would like to after visiting the Colour Theory page. 
-___
-### Favicon
-  * A site wide favicon has been implemented with the Colour Theory logo.
-  * This will provide an image in the the tabs header to allow the user to easily identify the website if they have multiple tabs open.
-___
-### 404 Page
-  * A 404 page has been implemented and will display if a user navigates to a broken link.
-  * The 404 page will allow the user to easily navigate back to the home page of the website with a button to take them directly to it. 
-  ![404](/assets/Readme%20Images/404.webp)
-___ 
-### Responsive design
-  * The website has been tested on all devices and is responsive on everything.
-___
-### Contact form and success page
-  * The website has a contact form with the contact details as required inputs.  The user is then taken to a success page once the form is submitted.  This page automatically redirects back to the home page after 10 seconds. 
-___
-### Link hover colour change
-  * The navbar menu and all footer elements change to the branding yellow colour on hover to show they are clickable. 
 
 &nbsp;  
 [Back to Table of Contents](#table-of-contents)
 &nbsp;
-
 
 # Features Left to Implement
 
@@ -144,28 +112,6 @@ ___
   * This section is to get the user excited about the colour personality quiz which we will soon be releasing.
 ___
 
-### What is Colour Theory Page:
-
-![ColourTheory](/assets/Readme%20Images/Colour-Theory.webp)
-* This page is designed to give users background information about colour theory and what different colours mean.
-* The images and corresponding text are responsive and will allow the user to view content from any device.
-
-___
-
-### Palettes drop down menu:
-
-![ColourTheory](/assets/Readme%20Images/Palettes.webp)
-- The format of these three pages is the same. It gives visitors some general information about this type of colour palette. Shows a room decorated with this colour palette with a sample palette pulled from this room and then gives a 'How To' section that gives visitors pointers on how to implement a palette like this in their own home. The three palettes explored are:
-  - Neutral
-  - Monochromatic
-  - Maximalist
-___
-
-### Contact Page:
-![Contact](/assets/Readme%20Images/Contact-page.webp)
-* This page gives a contact form that enables people to contact DesignLed directly.
-* The contact detail sections are required so that a user cannot submit the form with no information. 
-* It also gives contact details for DesignLed if people would prefer to use these.
 
 &nbsp;  
 [Back to Table of Contents](#table-of-contents)

@@ -33,7 +33,6 @@ body, html {
     background-size: cover;
   }
 
-
   .central-header {
     text-align: center;
     background-color: #FA5F22;
@@ -60,6 +59,10 @@ body, html {
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 10%;
+  }
+
+  .quiz-text {
+    text-align: left;
   }
 
 
