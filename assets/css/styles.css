@@ -8,7 +8,6 @@ body, html {
       font-style: normal;
   }
 
-
   button {
     font-size: large;
   }
@@ -65,7 +64,6 @@ body, html {
     text-align: left;
   }
 
-
   .choices {
     color: #FA5F22;
   }
@@ -73,6 +71,10 @@ body, html {
   .choices.chosen {
     background-color: green;
     border-radius: 50%;
+  }
+
+  #quiz-next-page {
+    margin-top: 1em;
   }
 
   /* mobile */
