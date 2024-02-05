@@ -46,9 +46,9 @@ function goToNextPage() {
 /** Function that shows the user their score */
 function showScore() {
   
-  if (finalScore <= 6) {
+  if (finalScore <= 4) {
     document.getElementById("score-text").innerHTML = "Oh dear you only scored " + finalScore
-  } else if (finalScore >= 7){
+  } else if (finalScore >= 5){
     document.getElementById("score-text").innerHTML = "Yay! You scored " + finalScore;
   } else {
     document.getElementById("score-text").innerHTML = "Oh dear, there has been an error."
