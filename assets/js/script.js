@@ -18,7 +18,6 @@ function chooseAnAnswer() {
       chosenAnswer = choice;
     });
   });
-
 }
 
 chooseAnAnswer();
@@ -35,27 +34,33 @@ function decideIfCorrectIncrementScore() {
   }
 }
 
-/** Function that takes use to next page and calls decideIfCorrect function */
-function goToNextPage() {
-  document.addEventListener("click", function () {
-    decideIfCorrectIncrementScore();
-    document.getElementById("quiz-next-page").style.backgroundColor = "#FA5F22";
+/** Function that takes user to the next question and calls decideIfCorrect function */
+
+function multi (){
+document
+  .getElementById("quiz-next-question")
+  .addEventListener("click", function () {
+        decideIfCorrectIncrementScore();    
+        document.getElementById("quiz-next-question").style.backgroundColor = "#FA5F22";
   });
-}
+};
+
+multi();
 
 /** Function that shows the user their score */
 function showScore() {
-  
   if (finalScore <= 4) {
-    document.getElementById("score-text").innerHTML = "Oh dear you only scored " + finalScore
-  } else if (finalScore >= 5){
-    document.getElementById("score-text").innerHTML = "Yay! You scored " + finalScore;
+    document.getElementById("score-text").innerHTML =
+      "Oh dear you only scored " + finalScore;
+  } else if (finalScore >= 5) {
+    document.getElementById("score-text").innerHTML =
+      "Yay! You scored " + finalScore;
   } else {
-    document.getElementById("score-text").innerHTML = "Oh dear, there has been an error."
-  };
-};
+    document.getElementById("score-text").innerHTML =
+      "Oh dear, there has been an error.";
+  }
+}
 
-
-  // finalScores.forEach(finalScore) => {
-  //  document.write("/assets/images/broccoli_happy");
-  // };
+// finalScores.forEach(finalScore) => {
+//  document.write("/assets/images/broccoli_happy");
+// };

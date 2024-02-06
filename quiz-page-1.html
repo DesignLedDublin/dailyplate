@@ -42,7 +42,7 @@
           <i class="fa-regular fa-circle choices icon-background2"></i>
         </div>
         <div class="col-xs-12 col-sm-3 col-xl-3">
-          <p class="quiz-text correc">Blueberry Muffin</p>
+          <p id="option-1" class="quiz-text correct-answer">Blueberry Muffin</p>
         </div>
       </div>
 
@@ -51,7 +51,7 @@
           <i class="fa-regular fa-circle choices correct-answer"></i>
         </div>
         <div class="col-xs-12 col-sm-3 col-xl-3">
-          <p class="quiz-text">Cupcake</p>
+          <p id="option-2" class="quiz-text">Cupcake</p>
         </div>
       </div>
 
@@ -60,17 +60,16 @@
           <i class="fa-regular fa-circle choices"></i>
         </div>
         <div class="col-xs-12 col-sm-4 col-xl-3">
-          <p class="quiz-text">Granola bar</p>
+          <p id="option-3" class="quiz-text">Granola bar</p>
         </div>
       </div>
 
       <div>
       <!-- Button code from Bootstrap - DO I NEED TO ADD - onlick = "goToNextPage()" - to make the js code functional here? See https://www.geeksforgeeks.org/how-to-create-a-link-in-javascript/ -->
-      <a href="quiz-page-2.html">
-      <button type="button" class="btn btn-dark btn-md" id="quiz-next-page">
-        Go to next page
+    
+      <button type="button" class="btn btn-dark btn-md" id="quiz-next-question">
+        Next Question
       </button>
-    </a>
   </div>
     </div>
 

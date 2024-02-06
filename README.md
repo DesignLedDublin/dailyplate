@@ -31,6 +31,7 @@ Colour Theory is an interactive quiz designed to teach people about calories.  I
 
 * [Issues Found During Site Development](#issues-found-during-site-development)
   * [Getting the showScore function to work automatically when the score-page function was opened](#getting-the-showScore-function-to-work-automatically-when-the-score-page-function-was-opened)
+  * [Getting the score to increment correctly](#getting-the-score-to-increment-correctly) 
   
 
 * [Deployment](#deployment)
@@ -206,6 +207,11 @@ Once I removed these CSS elements, no errors were found:
 ### Getting the showScore function to work automatically when the score-page function was opened 
   * I was using the onload = "function" syntax in the body but it wasn't loading.  After spending a long time trying to find a solution and trying out window.onload after readign several articles on Stack Overflow, I found [this article](https://sebhastian.com/function-not-defined-javascript/?utm_content=cmp-true).
   * This made me realise that I was calling the function above where I had placed the script for my JS file.  It suggested I put onload function underneath that at the bottom of the body but instead I decided to move the script for the JS file up to the head and include a defer command.  Once I did this, it sorted out the issue. 
+
+### Getting the score to increment correctly 
+  * I created all my code but the score wasn't incrementing when correct answers were clicked and the console was showing incorrect when it should have said correct.   I put [this question](https://stackoverflow.com/questions/77941188/variable-is-not-incrementing-with-the-function-i-have-written) on Stackoverflow and the answers made me realise I had two issues:
+    - The first issue is that I had created my quiz questions over several pages and the solutions for saving the data in the variables from one page to the next were quite complicated.  So I decided to create my quiz all on one page to get round this issue.  
+    - The second issue is that my code for choosing the right answer wasn't working, the click on the right answer wasn't registering with the code I had written. 
 
 &nbsp;  
 [Back to Table of Contents](#table-of-contents)
