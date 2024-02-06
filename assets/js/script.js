@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 let finalScore = 0;
+let chosenAnswer;
 
 /** Function that reacts when the user chooses an answer */
 function chooseAnAnswer() {
@@ -14,6 +15,7 @@ function chooseAnAnswer() {
         otherChoice.classList.remove("chosen");
       });
       choice.classList.add("chosen");
+      chosenAnswer = choice;
     });
   });
 
@@ -23,7 +25,6 @@ chooseAnAnswer();
 
 /** Function that decides which is the correct answer and increments the final score */
 function decideIfCorrectIncrementScore() {
-  let chosenAnswer = chooseAnAnswer();
   let correctAnswer = document.querySelector(".correct-answer");
 
   if (chosenAnswer == correctAnswer) {
@@ -33,12 +34,11 @@ function decideIfCorrectIncrementScore() {
     console.log("Incorrect!");
   }
 }
-decideIfCorrectIncrementScore();
 
 /** Function that takes use to next page and calls decideIfCorrect function */
 function goToNextPage() {
   document.addEventListener("click", function () {
-    decideIfCorrect();
+    decideIfCorrectIncrementScore();
     document.getElementById("quiz-next-page").style.backgroundColor = "#FA5F22";
   });
 }
