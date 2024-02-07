@@ -216,6 +216,9 @@ Once I removed these CSS elements, no errors were found:
   * The correct answer was being registered and chosen but the score was not incrementing over each page.  
   * I put [this question](https://stackoverflow.com/questions/77941188/variable-is-not-incrementing-with-the-function-i-have-written) on Stackoverflow and the answers made me realise that I needed to find a way to carry the data in the finalScore variable across the pages. 
 
+### Background image not showing on deployed site 
+  * Whilst the background showed correctly on my VS Code Live Server preview pages, it wasn't showing on any pages when I deployed my site.  I found [this article](https://stackoverflow.com/questions/76105938/css-background-image-not-showing-up-in-my-deployed-site#:~:text=Try%20to%20change%20your%20background,then%20to%20your%20desired%20image.) which suggested I replace "/assets" with ".." in the CSS so that the image could be found.  This worked perfectly. 
+
 &nbsp;  
 [Back to Table of Contents](#table-of-contents)
 &nbsp;
