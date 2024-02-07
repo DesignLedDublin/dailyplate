@@ -5,12 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
   let chosenAnswer;
 
   let score = localStorage.getItem("score");
+
   if (score) {
     score = JSON.parse(score);
   }
+
+  localStorage.setItem("score", JSON.stringify(score || 0));
 });
 
-localStorage.setItem("score", JSON.stringify(score || 0));
+
 
 /** Function that reacts when the user chooses an answer */
 function chooseAnAnswer() {
