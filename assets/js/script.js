@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (score) {
     score = JSON.parse(score);
   }
-
-  localStorage.setItem("score", JSON.stringify(score || 0));
+  
 });
 
 
