@@ -26,7 +26,10 @@ chooseAnAnswer();
 function decideIfCorrectIncrementScore() {
   let correctAnswer = document.querySelector(".correct-answer");
 
-  if (chosenAnswer == correctAnswer) {
+  console.log("Chosen Answer:", chosenAnswer.textContent);
+  console.log("Correct Answer:", correctAnswer.textContent);
+
+  if (chosenAnswer === correctAnswer) {
     finalScore++;
     console.log("Correct!");
   } else {
