@@ -1,9 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM fully loaded and parsed");
+
+  let finalScore = 0;
+  let chosenAnswer;
+
+  let score = localStorage.getItem("score");
+  if (score) {
+    score = JSON.parse(score);
+  }
 });
 
-let finalScore = 0;
-let chosenAnswer;
+localStorage.setItem("score", JSON.stringify(score || 0));
 
 /** Function that reacts when the user chooses an answer */
 function chooseAnAnswer() {
@@ -25,10 +32,6 @@ chooseAnAnswer();
 /** Function that decides which is the correct answer and increments the final score */
 function decideIfCorrectIncrementScore() {
   let correctAnswer = document.querySelector(".correct-answer");
-
-  console.log("Chosen Answer:", chosenAnswer.textContent);
-  console.log("Correct Answer:", correctAnswer.textContent);
-
   if (chosenAnswer === correctAnswer) {
     finalScore++;
     console.log("Correct!");
@@ -39,16 +42,17 @@ function decideIfCorrectIncrementScore() {
 
 /** Function that takes user to the next question and calls decideIfCorrect function */
 
-function multi (){
-document
-  .getElementById("quiz-next-question")
-  .addEventListener("click", function () {
-        decideIfCorrectIncrementScore();    
-        document.getElementById("quiz-next-question").style.backgroundColor = "#FA5F22";
-  });
-};
+function nextQuestion() {
+  document
+    .getElementById("quiz-next-question")
+    .addEventListener("click", function () {
+      decideIfCorrectIncrementScore();
+      document.getElementById("quiz-next-question").style.backgroundColor =
+        "#FA5F22";
+    });
+}
 
-multi();
+nextQuestion();
 
 /** Function that shows the user their score */
 function showScore() {
