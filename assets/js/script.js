@@ -1,17 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM fully loaded and parsed");
-
-  let finalScore = 0;
-  let chosenAnswer;
-
-  let score = localStorage.getItem("score");
-
-  if (score) {
-    score = JSON.parse(score);
-  }
-  
 });
 
+let finalScore = 0;
+  let chosenAnswer;
 
 
 /** Function that reacts when the user chooses an answer */
