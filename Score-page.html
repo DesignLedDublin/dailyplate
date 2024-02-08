@@ -31,6 +31,14 @@
 
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="assets/js/script.js" defer></script>
+
+    <script type="text/javascript">
+      let score = localStorage.getItem("score");
+      if (score) {
+        score = JSON.parse(score);
+      }
+    </script>
+
     <title>Daily Plate</title>
   </head>
 
@@ -44,13 +52,6 @@
       </a>
     </div>
 
-    <script type="text/javascript">
-      let score = localStorage.getItem("score");
-      if (score) {
-        score = JSON.parse(score);
-      }
-
-      localStorage.setItem("score".JSON.stringify(score || 0));
-    </script>
+  
   </body>
 </html>
