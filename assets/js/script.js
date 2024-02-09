@@ -2,8 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM fully loaded and parsed");
 });
 
-let finalScore = 0;
-  let chosenAnswer;
+  let chosenAnswer;  
+  let finalScore = localStorage.getItem("finalScore");
+finalScore = finalScore ? JSON.parse(finalScore) : 0;
+
+  if (score) {
+    score = JSON.parse(score);
+  }
+
+  localStorage.setItem("score".JSON.stringify(score || 0));
 
 
 /** Function that reacts when the user chooses an answer */
@@ -32,6 +39,7 @@ function decideIfCorrectIncrementScore() {
   } else {
     console.log("Incorrect!");
   }
+  localStorage.setItem("finalScore", JSON.stringify(finalScore));
 }
 
 /** Function that takes user to the next question and calls decideIfCorrect function */

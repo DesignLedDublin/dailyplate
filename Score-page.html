@@ -30,14 +30,11 @@
     ></script>
 
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script>
+      localStorage.setItem("finalScore", JSON.stringify(0));
+    </script>
     <script src="assets/js/script.js" defer></script>
 
-    <!-- <script type="text/javascript">
-      let score = localStorage.getItem("score");
-      if (score) {
-        score = JSON.parse(score);
-      }
-    </script> -->
 
     <title>Daily Plate</title>
   </head>
@@ -46,7 +43,7 @@
     <div class="container-fluid central-header">
       <h2 id="score-text">"You scored..."</h2>
 
-      <a href="quiz-page-1.html">
+      <a href="index.html">
         <!-- Button code from Bootstrap -->
         <button a type="button" class="btn btn-light btn-lg">Try again</button>
       </a>
