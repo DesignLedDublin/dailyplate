@@ -6,12 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let finalScore = localStorage.getItem("finalScore");
 finalScore = finalScore ? JSON.parse(finalScore) : 0;
 
-  if (score) {
-    score = JSON.parse(score);
-  }
-
-  localStorage.setItem("score".JSON.stringify(score || 0));
-
 
 /** Function that reacts when the user chooses an answer */
 function chooseAnAnswer() {
