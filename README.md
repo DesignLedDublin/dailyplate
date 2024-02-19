@@ -1,6 +1,6 @@
 # Daily Plate
 
-Colour Theory is an interactive quiz designed to teach people about calories.  It features a quiz testing user's knowledge of the calorie content in foods as well as a calorie calculator designed to enable users to calorie cycle effectively through a week.  [here](https://designleddublin.github.io/ColourTheory/index.html)
+Daily Plate is an interactive quiz designed to teach people about calories.  It features a quiz testing user's knowledge of the calorie content in well known foods.  [here](https://designleddublin.github.io/dailyplate/)
 
 ![Mockup](/assets/Readme%20Images/All-devices.webp)
 
@@ -50,20 +50,14 @@ Colour Theory is an interactive quiz designed to teach people about calories.  I
 
 ### Colours
 
-* The feature colour of #580b20 is used throughout the site to highlight key elements on a page and for icons. 
-* The feature colour of #dc9806 is used when items in the menu bar or social icons are hovered over.
-   ![HoverColour](/assets/Readme%20Images/Header-palettes-clicked.webp)
+* The main feature colour of #FA5F22 is used throughout the site on borders and fonts.
+* The feature colour of #008000 is used as an accent colour as a hover colour etc.
 
 ### Fonts 
-* Fonts used are Arial Narrow Bold and Grandiflora One
+* The font used is Klee One.
 
 ### Images 
-* All images are from my design studio work, DesignLed. 
-* The logo was created by me for this project. 
-
-### General design points
-  * The footer border is replaced with a custom-designed rainbow line to link in with the colour theme of the website.
-  ![Footer](/assets/Readme%20Images/Footer.webp)
+* The background image is purchased from istock. 
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -91,7 +85,7 @@ ___
 
 # Features Left to Implement
 
-* As a future enhancement, the contact form will be updated with javascript to send an email to DesignLed when submit is clicked. 
+* I plan to add another page which will have a calorie calculator designed to enable users to calorie cycle effectively through a week. 
 
 &nbsp;  
 [Back to Table of Contents](#table-of-contents)
