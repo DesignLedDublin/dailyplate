@@ -12,6 +12,15 @@ body, html {
     font-size: large;
   }
 
+  a {
+    color: #FA5F22;
+  }
+
+  a:hover {
+   color: green;
+   text-decoration-line: none;
+  }
+
   .container-fluid {
     margin: auto;
   }
@@ -66,8 +75,10 @@ body, html {
     border-radius: 50%;
   }
 
-  #quiz-next-page {
+  #quiz-next-question {
     margin-top: 1em;
+    background-color: white;
+    border-color: #FA5F22;
   }
 
   /* mobile */
