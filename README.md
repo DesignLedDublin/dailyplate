@@ -31,7 +31,10 @@ Colour Theory is an interactive quiz designed to teach people about calories.  I
 
 * [Issues Found During Site Development](#issues-found-during-site-development)
   * [Getting the showScore function to work automatically when the score-page function was opened](#getting-the-showScore-function-to-work-automatically-when-the-score-page-function-was-opened)
-  * [Getting the score to increment correctly](#getting-the-score-to-increment-correctly) 
+  * [Getting my functions to register the correct answer when it was clicked](getting-my-functions-to-register-the-correct-answer-when-it-was-clicked)
+  * [Getting the score to increment correctly](getting-the-score-to-increment-correctly)
+  * [Background image not showing on deployed site](background-image-not-showing-on-deployed-site) 
+
   
 
 * [Deployment](#deployment)
