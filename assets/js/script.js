@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM fully loaded and parsed");
 });
 
-  let chosenAnswer;  
-  let finalScore = localStorage.getItem("finalScore");
+let chosenAnswer = null;
+let finalScore = localStorage.getItem("finalScore");
 finalScore = finalScore ? JSON.parse(finalScore) : 0;
 
-
 /** Function that reacts when the user chooses an answer */
+
 function chooseAnAnswer() {
   let choices = document.querySelectorAll(".choices");
 
@@ -18,6 +18,8 @@ function chooseAnAnswer() {
       });
       choice.classList.add("chosen");
       chosenAnswer = choice;
+
+      // document.getElementById("quiz-next-question").disabled = false;
     });
   });
 }
@@ -29,9 +31,11 @@ function decideIfCorrectIncrementScore() {
   let correctAnswer = document.querySelector(".correct-answer");
   if (chosenAnswer === correctAnswer) {
     finalScore++;
-    console.log("Correct!");
+    document.getElementById("wrong-or-right").innerHTML =
+      "Correct!";
   } else {
-    console.log("Incorrect!");
+    document.getElementById("wrong-or-right").innerHTML =
+    "Incorrect!";
   }
   localStorage.setItem("finalScore", JSON.stringify(finalScore));
 }
@@ -39,12 +43,8 @@ function decideIfCorrectIncrementScore() {
 /** Function that takes user to the next question and calls decideIfCorrect function */
 
 function nextQuestion() {
-  document
-    .getElementById("quiz-next-question")
-    .addEventListener("click", function () {
-      decideIfCorrectIncrementScore();
-      document.getElementById("quiz-next-question").style.backgroundColor =
-        "#FA5F22";
+  document.getElementById("quiz-next-question").addEventListener("click", function () {
+        decideIfCorrectIncrementScore();
     });
 }
 
@@ -67,3 +67,4 @@ function showScore() {
 // finalScores.forEach(finalScore) => {
 //  document.write("/assets/images/broccoli_happy");
 // };
+
