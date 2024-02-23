@@ -18,8 +18,6 @@ function chooseAnAnswer() {
       });
       choice.classList.add("chosen");
       chosenAnswer = choice;
-
-      // document.getElementById("quiz-next-question").disabled = false;
     });
   });
 }
@@ -31,22 +29,24 @@ function decideIfCorrectIncrementScore() {
   let correctAnswer = document.querySelector(".correct-answer");
   if (chosenAnswer === correctAnswer) {
     finalScore++;
-    document.getElementById("wrong-or-right").innerHTML =
-      "Correct!";
+    document.getElementById("wrong-or-right").innerHTML = "Correct!";
   } else {
-    document.getElementById("wrong-or-right").innerHTML =
-    "Incorrect!";
+    document.getElementById("wrong-or-right").innerHTML = "Incorrect!";
   }
   localStorage.setItem("finalScore", JSON.stringify(finalScore));
+
+  setTimeout(() => {
+    document.getElementById("wrong-or-right").innerHTML = "";}, 3000); 
 }
 
 /** Function that takes user to the next question and calls decideIfCorrect function */
-
 function nextQuestion() {
-  document.getElementById("quiz-next-question").addEventListener("click", function () {
-        decideIfCorrectIncrementScore();
+  document.getElementById("quiz-next-question")
+    .addEventListener("click", function () {
+      decideIfCorrectIncrementScore();
+
     });
-}
+  };
 
 nextQuestion();
 
@@ -67,4 +67,3 @@ function showScore() {
 // finalScores.forEach(finalScore) => {
 //  document.write("/assets/images/broccoli_happy");
 // };
-
