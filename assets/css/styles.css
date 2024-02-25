@@ -81,6 +81,11 @@ body, html {
     border-color: #FA5F22;
   }
 
+  #wrong-or-right {
+    margin-top: 1em;
+    color: #008000;
+  }
+
   /* mobile */
   @media (min-width: 320px) and (max-width: 480px) {
     .quiz-text {
