@@ -43,26 +43,31 @@ function decideIfCorrectIncrementScore() {
 /** Function that takes user to next page on next page button click with 3 second delay */
 function nextQuestion(pagesMap) {
   const handleNextClick = () => {
-    const currentPage = window.location.pathname.split("/").pop();
-
-    const nextPage = pagesMap[currentPage];
-
-    if (nextPage) {
-      decideIfCorrectIncrementScore();
-
-      document.getElementById("quiz-next-question").disabled = true;
-      setTimeout(() => {
-        document.getElementById("quiz-next-question").disabled = false;
-      }, 3000);
-
-      setTimeout(() => {
-        window.location.href = nextPage;
-      }, 3000);
+    console.log("chosenAnswer : ", chosenAnswer);
+    if (chosenAnswer == null) {
+      document.getElementById("wrong-or-right").innerHTML = "Choose an answer!";
     } else {
-      console.error("Next page not found in pagesMap");
-    }
+      const currentPage = window.location.pathname.split("/").pop();
 
-    return false;
+      const nextPage = pagesMap[currentPage];
+
+      if (nextPage) {
+        decideIfCorrectIncrementScore();
+
+        document.getElementById("quiz-next-question").disabled = true;
+        setTimeout(() => {
+          document.getElementById("quiz-next-question").disabled = false;
+        }, 3000);
+
+        setTimeout(() => {
+          window.location.href = nextPage;
+        }, 3000);
+      } else {
+        console.error("Next page not found in pagesMap");
+      }
+
+      return false;
+    }
   };
 
   document
