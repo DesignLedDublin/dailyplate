@@ -33,7 +33,8 @@ Daily Plate is an interactive quiz designed to teach people about calories.  It 
   * [Getting the showScore function to work automatically when the score-page function was opened](#getting-the-showScore-function-to-work-automatically-when-the-score-page-function-was-opened)
   * [Getting my functions to register the correct answer when it was clicked](getting-my-functions-to-register-the-correct-answer-when-it-was-clicked)
   * [Getting the score to increment correctly](getting-the-score-to-increment-correctly)
-  * [Making the page pause after the button to next page was clicked](making-the-page-pause-after-the-button-to-next-page-was-clicked)
+  * [Putting the next page click action in a function rather than HTML](putting-the-next-page-click-action-in-a-function-rather-than-HTML) 
+  * [Putting a 3 second delay before the button click goes to next page](putting-a-3-second-delay-before-the-button-click-goes-to-next-page)
   * [Background image not showing on deployed site](background-image-not-showing-on-deployed-site) 
 
   
@@ -219,9 +220,15 @@ Once I removed these CSS elements, no errors were found:
     - [Article 3](https://blog.logrocket.com/localstorage-javascript-complete-guide/)
   * I decided to using the localStorage method and used these articles to help me implement this.  
 
-### Making the page pause after the button to next page was clicked
-  * The correct answer was being registered and chosen but the score was not incrementing over each page.  
-  * I put [this question](https://stackoverflow.com/questions/77941188/variable-is-not-incrementing-with-the-function-i-have-written) on Stackoverflow and the answers made me realise that I needed to find a way to carry the data in the finalScore variable across the pages. 
+### Putting the next page click action in a function rather than HTML.  
+  * I could figure out how to create a function that took the user from one page to another but I was confused how to do this over multiple pages.  
+  * [This article](https://www.geeksforgeeks.org/how-to-add-a-key-value-pair-to-map-in-javascript/) enabled me to understand how to map from one page to another.
+
+  ### Putting a 3 second delay before the button click goes to next page.  
+  * I researched this subject using these articles:
+    - [Article 1](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
+    - [Article 2](https://www.sitepoint.com/delay-sleep-pause-wait/#:~:text=The%20standard%20way%20of%20creating,after%20two%20seconds%20%E2%80%9CWorld!%E2%80%9D)
+  * Through trial and error using these I managed to create a 3 second delay after the button was clicked to got to the next page and also to keep the text on screen telling the user if their answer is correct or incorrect. 
 
 ### Background image not showing on deployed site 
   * Whilst the background showed correctly on my VS Code Live Server preview pages, it wasn't showing on any pages when I deployed my site.  I found [this article](https://stackoverflow.com/questions/76105938/css-background-image-not-showing-up-in-my-deployed-site#:~:text=Try%20to%20change%20your%20background,then%20to%20your%20desired%20image.) which suggested I replace "/assets" with ".." in the CSS so that the image could be found.  This worked perfectly. 
