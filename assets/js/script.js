@@ -37,7 +37,7 @@ function decideIfCorrectIncrementScore() {
 
   setTimeout(() => {
     document.getElementById("wrong-or-right").innerHTML = "";
-  }, 3000);
+  }, 2000);
 }
 
 /** Function that takes user to next page on next page button click with 3 second delay */
@@ -57,11 +57,11 @@ function nextQuestion(pagesMap) {
         document.getElementById("quiz-next-question").disabled = true;
         setTimeout(() => {
           document.getElementById("quiz-next-question").disabled = false;
-        }, 3000);
+        }, 2000);
 
         setTimeout(() => {
           window.location.href = nextPage;
-        }, 3000);
+        }, 2000);
       } else {
         console.error("Next page not found in pagesMap");
       }
@@ -91,13 +91,13 @@ nextQuestion(pagesMap);
 function showScore() {
   if (finalScore <= 4) {
     document.getElementById("score-text").innerHTML =
-      "Oh dear you only scored " + finalScore;
+      "Oh dear you only scored " + finalScore + " out of 7";
   } else if (finalScore >= 5) {
     document.getElementById("score-text").innerHTML =
-      "Yay! You scored " + finalScore;
+      "Well done! You scored " + finalScore + " out of 7";
   } else {
     document.getElementById("score-text").innerHTML =
-      "Oh dear, there has been an error.";
+      "Something has gone wrong";
   }
 }
 
