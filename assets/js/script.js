@@ -40,71 +40,15 @@ function decideIfCorrectIncrementScore() {
 }
 
 /** Function that takes user to the next question and calls decideIfCorrect function */
-// function nextQuestion() {
-//   document.getElementById("quiz-next-question").addEventListener("click", function () {
-//       decideIfCorrectIncrementScore();
-//     });
-//   };
-
-// nextQuestion();
-
-// ------------------------------------
-
-
-function nextQuestion(pagesMap) {
-  const handleNextClick = () => {
-    // Get the current page filename
-    const currentPage = window.location.pathname.split('/').pop();
-  
-    // Get the next page URL based on the current page
-    const nextPage = pagesMap[currentPage];
-  
-    // Ensure nextPage is defined
-    if (nextPage) {
-      // Show correct/incorrect message
+function nextQuestion() {
+  document.getElementById("quiz-next-question")
+    .addEventListener("click", function () {
       decideIfCorrectIncrementScore();
-  
-      // Disable the button and show message for 3 seconds
-      document.getElementById("quiz-next-question").disabled = true;
-      setTimeout(() => {
-        document.getElementById("quiz-next-question").disabled = false;
-      }, 3000);
-  
-      // Navigate to the specified next page after delay
-      setTimeout(() => {
-        window.location.href = nextPage;
-      }, 3000);
-    } else {
-      console.error('Next page not found in pagesMap');
-    }
-  
-    // Ensure to prevent default behavior and stop event propagation
-    return false;
+
+    });
   };
 
-  // Add event listener during initialization
-  document.getElementById("quiz-next-question").addEventListener("click", handleNextClick);
-}
-
-
-// Define a map of pages to their corresponding URLs
-const pagesMap = {
-  'quiz-page-1.html': 'quiz-page-2.html',
-  'quiz-page-2.html': 'quiz-page-3.html',
-  'quiz-page-3.html': 'quiz-page-4.html',
-  'quiz-page-4.html': 'quiz-page-5.html',
-  'quiz-page-5.html': 'quiz-page-6.html',
-  'quiz-page-6.html': 'quiz-page-final.html',
-  'quiz-page-final.html': 'score-page.html',
-  // Add mappings for all your HTML pages here
-};
-
-// Call nextQuestion with the map of pages and URLs
-nextQuestion(pagesMap);
-
-// ------------------------------------  
-
-
+nextQuestion();
 
 /** Function that shows the user their score */
 function showScore() {
