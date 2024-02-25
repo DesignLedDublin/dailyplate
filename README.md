@@ -33,6 +33,7 @@ Daily Plate is an interactive quiz designed to teach people about calories.  It 
   * [Getting the showScore function to work automatically when the score-page function was opened](#getting-the-showScore-function-to-work-automatically-when-the-score-page-function-was-opened)
   * [Getting my functions to register the correct answer when it was clicked](getting-my-functions-to-register-the-correct-answer-when-it-was-clicked)
   * [Getting the score to increment correctly](getting-the-score-to-increment-correctly)
+  * [Making the page pause after the button to next page was clicked](making-the-page-pause-after-the-button-to-next-page-was-clicked)
   * [Background image not showing on deployed site](background-image-not-showing-on-deployed-site) 
 
   
@@ -217,6 +218,10 @@ Once I removed these CSS elements, no errors were found:
     - [Article 2](https://www.javascripttutorial.net/web-apis/javascript-sessionstorage/)
     - [Article 3](https://blog.logrocket.com/localstorage-javascript-complete-guide/)
   * I decided to using the localStorage method and used these articles to help me implement this.  
+
+### Making the page pause after the button to next page was clicked
+  * The correct answer was being registered and chosen but the score was not incrementing over each page.  
+  * I put [this question](https://stackoverflow.com/questions/77941188/variable-is-not-incrementing-with-the-function-i-have-written) on Stackoverflow and the answers made me realise that I needed to find a way to carry the data in the finalScore variable across the pages. 
 
 ### Background image not showing on deployed site 
   * Whilst the background showed correctly on my VS Code Live Server preview pages, it wasn't showing on any pages when I deployed my site.  I found [this article](https://stackoverflow.com/questions/76105938/css-background-image-not-showing-up-in-my-deployed-site#:~:text=Try%20to%20change%20your%20background,then%20to%20your%20desired%20image.) which suggested I replace "/assets" with ".." in the CSS so that the image could be found.  This worked perfectly. 
