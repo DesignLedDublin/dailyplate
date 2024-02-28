@@ -69,6 +69,18 @@ a:hover {
   position: relative;
 }
 
+.central-header-score {
+  text-align: center;
+  background-color: #fa5f22;
+  background-position: center;
+  width: auto;
+  padding-bottom: 5em;
+  padding-top: 2em;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+
 .quiz-text {
   text-align: left;
 }
@@ -93,14 +105,24 @@ a:hover {
   color: #008000;
 }
 
+.links {
+  color: #212529;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
 /* mobile */
 @media (min-width: 280px) and (max-width: 480px) {
   .quiz-text {
     text-align: center;
   }
 
-  h2 {
+  h2, h3 {
     font-size: 1em;
+  }
+
+  p {
+    font-size: 0.7em;
   }
 
   button {
@@ -126,8 +148,12 @@ a:hover {
     background-position: center;
   }
 
-  h2 {
-    font-size: 1em!important;
+  h2, h3 {
+    font-size: 1em! important;
+  }
+
+  p {
+    font: 0.5em! important;
   }
 
   button {
