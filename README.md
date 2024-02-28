@@ -138,10 +138,12 @@ ___
   - The website was developed using Visual Studio Code IDE
 * GitHub
   - Source code is hosted on GitHub and delpoyed using Git Pages. Github was also used to commit and push code during the development opf the Website
+* Font Awesome
+  - I used Font Awesome for the icons on the website. 
 * www.birme.net
   - This was used on all images to both compress and convert them to .webp format./
 * Sketch
-  - wireframes were created using sketch.com
+  - Wireframes were created using sketch.com
 
 
 &nbsp;  
@@ -170,7 +172,7 @@ No elements overlap.
 
 Actual:
 
-Website behaved as expected with the exception of ipad screen when one of the social icons in the footer went below the line of the others.  I was not able to fix this, please see unfixed bugs. 
+Website behaved as expected.
 
 Website was also opened on the following devices and no responsive issues were seen:
 
