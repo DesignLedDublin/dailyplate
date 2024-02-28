@@ -174,23 +174,17 @@ Website was also opened on the following devices and no responsive issues were s
 ## Validator Testing 
 
 ### HTML
- [W3C validator](https://validator.w3.org)
+ I tested for issues with the html with [W3C validator](https://validator.w3.org)
  Initially the following issues were found:
  * There were multiple trailing slash on void elements found.
- * For all the img elements, I had to take out the px as this wasn't allowed in the width and height elements. 
- * The automatic redirect for the contact-form-submit.html was not in the head section of the website so this had to be moved. 
+ * I had the button inside the a tag, I had to move the href inside the button element.
+ * I had left some closing tags incorrect after changing formatting. 
 
- Once I had corrected these issues, there were no further errors found when passing it through the W3C validator.
-![HTML](/assets/Readme%20Images/HTML-checker.webp)
+ Once I made these amendments, there no errors. 
 
  ### CSS
- [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
-Initially, there the issues below with my CSS code:
-![CSSErrors](/assets/Readme%20Images/CSS-validator-issues.webp)
+I tested for issues with CSS using [W3C CSS validator](https://jigsaw.w3.org/css-validator/) and none were found. 
 
-Once I removed these CSS elements, no errors were found:
-![CSSClear](/assets/Readme%20Images/CSS-validator-clear.webp)
-&nbsp;  
 
 ### Lighthouse
  * I tested all pages of my website with Lighthouse, they were all above 90% in all three categories with the exception of the Home Page performance indicator which was coming in at 86% as the carousel images are larger. 
