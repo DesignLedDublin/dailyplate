@@ -1,8 +1,8 @@
 # Daily Plate
 
-Daily Plate is an interactive quiz designed to teach people about calories.  It features a quiz testing user's knowledge of the calorie content in well known foods.  [here](https://designleddublin.github.io/dailyplate/)
+Daily Plate is an interactive quiz website designed to teach people about calories and healthy eating.  It features a quiz testing user's knowledge of the calorie content in well known foods as well as a links page to learn more about healthy eating.  [here](https://designleddublin.github.io/dailyplate/)
 
-![Mockup](/assets/Readme%20Images/All-devices.webp)
+![Mockup](/assets/images/readme_images/mockup.webp)
 
 # Table of Contents
 
@@ -10,10 +10,10 @@ Daily Plate is an interactive quiz designed to teach people about calories.  It 
   * [Colour](#colours)
   * [Fonts](#fonts)
   * [Images](#images)
-  * [General Design Points](#general-design-points)
+  * [Wireframes](#wireframes)
 
 * [Features](#features)
-  * [Navigation Menu](#navigation-menu)
+  * [Functionality](#Functionality)
 
 * [Features Left to Implement](#features-left-to-implement)
 
@@ -59,7 +59,18 @@ Daily Plate is an interactive quiz designed to teach people about calories.  It 
 * The font used is Klee One.
 
 ### Images 
-* The background image is purchased from istock. 
+* The background image is purchased from istock.
+
+### Wireframes
+
+Home Page
+![HomePage](/assets/images/readme_images/wireframe_1.webp)
+
+Quiz Page
+![HomePage](/assets/images/readme_images/wireframe_2.webp)
+
+Score Page 
+![HomePage](/assets/images/readme_images/wireframe_3.webp)
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -67,17 +78,14 @@ Daily Plate is an interactive quiz designed to teach people about calories.  It 
 
 # Features 
 
-This website consists of 8 pages.  Six are accessible from the navigation menu.  One is a 404 error page and one is a submission confirmation page for the contact form. 
+This website consists of 10 pages. One is the home page, 7 are individual quiz question pages followed by a score page and a page linking to external sites related to the subject matter of the quiz. 
 
-### Navigation Menu
-  * On the left hand side is the site logo, this moves to the center on mobile devices.  
-  * On the right hand side there are four links or burger menu on smaller screens:
-    * Home
-    * What is Colour Theory
-    * Palettes dropdown menu pages
-    * Contact page 
-  * The user can decide to have the Palettes dropdown menu open or closed by clicking the Palettes menu item to both open and close it. 
-   ![Dropdown](/assets/Readme%20Images/Header-dropdown-menu.webp)
+### Functionality 
+  * As the user goes through the quiz, the following functionanlity has been implemented: 
+    * The user cannot go to the next question until they have answered the current one. 
+    * Once the user clicks to go to the next question, they are told whether their answer is correct or incorrect. 
+    * The score is automatically incremented over each page. 
+    * When the user goes back to the home page, the score goes back to zero. 
 ___
 
 
@@ -88,6 +96,7 @@ ___
 # Features Left to Implement
 
 * I plan to add another page which will have a calorie calculator designed to enable users to calorie cycle effectively through a week. 
+* I also plan to link my site to an API that means users get different questions each time they visit the site. 
 
 &nbsp;  
 [Back to Table of Contents](#table-of-contents)
@@ -97,19 +106,21 @@ ___
 
 ### Home Page:
 
-![HomePage](/assets/Readme%20Images/Home.webp)
-* Landing page header
-  * The landing page header - How to use Colour in Your Home - will immediately explain what the website is for.
+* Quiz landing page
+  * This explains what the quiz is for and how it works 
+![HomePage](/assets/images/readme_images/website_home_page.webp)  
 
-* Landing page carousel
-  * This will be a collection of DesignLed's projects that show a strong use of colour.
-  * It will help to animate the page and inspire the user.
+* Quiz pages
+  * There are seven quiz pages the user must answer. 
+![HomePage](/assets/images/readme_images/website_quiz_page.webp)
 
-* Sub heading
-  * This will serve to reiterate to the user what the website is for and how it will help them learn how to use colour in their home.
+* Score page
+  * After the seven question pages, the user is taken to the score page.  From here they can either go to the links page or go back and take the quiz again. 
+![HomePage](/assets/images/readme_images/website_score_page.webp)
 
-* Coming Soon Section
-  * This section is to get the user excited about the colour personality quiz which we will soon be releasing.
+* Links page
+  * This page shares some links to exernal websites if the user is interested in finding out more about healthy eating.  From here the user can navigate back to the home page of the quiz. 
+  ![HomePage](/assets/images/readme_images/website_links_page.webp)
 ___
 
 
@@ -127,14 +138,11 @@ ___
   - The website was developed using Visual Studio Code IDE
 * GitHub
   - Source code is hosted on GitHub and delpoyed using Git Pages. Github was also used to commit and push code during the development opf the Website
-* Font Awesome
-  - Icons obtained from https://fontawesome.com/ were used as the Social media links in the footer section.
 * www.birme.net
   - This was used on all images to both compress and convert them to .webp format./
-* Favicon.io
-  - favicon files were created at https://favicon.io/favicon-converter/
 * Sketch
   - wireframes were created using sketch.com
+
 
 &nbsp;  
 [Back to Table of Contents](#table-of-contents)
@@ -148,7 +156,7 @@ All pages were tested to ensure responsiveness on screen sizes from 320px and up
 
 Steps to test:
 
-1. Open browser and navigate to [Colour Theory](https://designleddublin.github.io/ColourTheory/)
+1. Open browser and navigate to [Daily Plate](https://designleddublin.github.io/dailyplate/)
 2. Open the developer tools (right click and inspect)
 3. Set to responsive and decrease width to 320px
 4. Set the zoom to 50%
@@ -186,10 +194,8 @@ Website was also opened on the following devices and no responsive issues were s
 I tested for issues with CSS using [W3C CSS validator](https://jigsaw.w3.org/css-validator/) and none were found. 
 
 
-### Lighthouse
- * I tested all pages of my website with Lighthouse, they were all above 90% in all three categories with the exception of the Home Page performance indicator which was coming in at 86% as the carousel images are larger. 
- ![Home Page Lighthouse](/assets/Readme%20Images/Lighthouse%20Report%20Home%20Page.webp)
- In order to bring this indicator above 90%, I had to reduce the size of the carousel images but this made them blurry.  So it was decided to keep them at the higher resolution as 86% is still perfectly acceptable for a website to run well. 
+### JSHint
+ I tested all pages of my website with [JSHint](https://jshint.com/).  It did not detect any errors. 
 
 &nbsp;  
 [Back to Table of Contents](#table-of-contents)
@@ -236,20 +242,20 @@ The project was deployed on GitHub Pages. I worked in VS Code and committed and 
 
 To deploy a project I had to:
 
-* Log in to GitHub and click on repository to deploy ([ColourTheory](https://github.com/DesignLedDublin/ColourTheory))
+* Log in to GitHub and click on repository to deploy ([DailyPlate](https://github.com/DesignLedDublin/dailyplate))
 * select `Settings` and find GitHub Pages section at the very bottom of the page
 * from source select `Deploy from a branch` and then `Main` branch.
 * click `save` and page was deployed after auto-refresh.
->  My site is published at https://designleddublin.github.io/ColourTheory//
+>  My site is published at https://designleddublin.github.io/dailyplate/
 
 To run locally:
-* Log in to GitHub and click on repository to download ([ColourTheory](https://github.com/DesignLedDublin/ColourTheory))
+* Log in to GitHub and click on repository to download ([DailyPlate](https://github.com/DesignLedDublin/dailyplate))
 * select `Code` and click Download the ZIP file.
 * after download you can extract the file and use it in your local environment 
 
 Alternatively you can [Clone](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 or [Fork](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
-this repository ([ColourTheory](https://github.com/DesignLedDublin/ColourTheory))into your github account.
+this repository ([DailyPlate](https://github.com/DesignLedDublin/dailyplate))into your github account.
 
  
 [Back to Table of Contents](#table-of-contents)
@@ -271,10 +277,10 @@ I used Boostrap code for some parts of my website, this is noted in the code.
 &nbsp;  
 
 ## Images
-* All images belong to me, any additional design elements were created by me for this project. 
-&nbsp; 
+* The background image was bought from istock.  
+* The mockup image at the top of the readme was a free download from unblast.com.
 
 ## Content
-* All content is original and generated by me.
+* Content was from research carried out on the internet and with real life products. 
 
 [Back to Table of Contents](#table-of-contents)

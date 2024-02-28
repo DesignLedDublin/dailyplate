@@ -101,6 +101,3 @@ function showScore() {
   }
 }
 
-// finalScores.forEach(finalScore) => {
-//  document.write("/assets/images/broccoli_happy");
-// };
